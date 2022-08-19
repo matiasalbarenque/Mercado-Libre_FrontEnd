@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "noEmit": true,
+        "baseUrl": ".",
+        "jsx": "preserve",
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ],
+        },
+    },
+    "include": [
+        "src/**/*.js",
+        "src/**/*.vue"
+    ],
+    "exclude": [
+        "node_modules"
+    ],
+    "vueCompilerOptions": {
+        "target": 2.7
+    }
+}

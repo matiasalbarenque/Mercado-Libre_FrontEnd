@@ -80,7 +80,7 @@ export default {
 
         async getItems(search) {
             this.loading = true;
-            const apiData = await axios(`${process.env.VUE_APP_BACKEND_API_URL}/api/items?q=${search}`);
+            const apiData = await axios(`${import.meta.env.VITE_BACKEND_API_URL}/api/items?q=${search}`);
             this.apiData = apiData.data;
             this.loading = false;
         },

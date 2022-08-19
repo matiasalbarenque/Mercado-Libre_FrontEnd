@@ -117,7 +117,7 @@ export default {
         const { id } = this.$route.params;
 
         this.loading = true;
-        const apiData = await axios(`${process.env.VUE_APP_BACKEND_API_URL}/api/items/${id}`);
+        const apiData = await axios(`${import.meta.env.VITE_BACKEND_API_URL}/api/items/${id}`);
         this.apiData = apiData.data;
         this.loading = false;
     },

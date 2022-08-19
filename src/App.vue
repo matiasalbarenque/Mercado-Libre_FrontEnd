@@ -33,7 +33,7 @@ export default {
     name: 'app',
 
     metaInfo: {
-        title: process.env.VUE_APP_PROJECT_NAME,
+        title: import.meta.env.VITE_PROJECT_NAME,
     },
 
     components: {

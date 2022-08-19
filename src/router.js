@@ -7,17 +7,17 @@ const routes = [
     {
         name: 'home',
         path: '/',
-        component: () => import(/* webpackChunkName: "[request]" */ './custom/pages/home.vue'),
+        component: () => import('./custom/pages/home.vue'),
     },
     {
         name: 'items',
         path: '/items',
-        component: () => import(/* webpackChunkName: "[request]" */ './custom/pages/items.vue'),
+        component: () => import('./custom/pages/items.vue'),
     },
     {
         name: 'item',
         path: '/items/:id',
-        component: () => import(/* webpackChunkName: "[request]" */ './custom/pages/item.vue'),
+        component: () => import('./custom/pages/item.vue'),
     },
     {
         path: '*',
